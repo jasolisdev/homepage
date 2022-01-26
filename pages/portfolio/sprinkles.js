@@ -5,35 +5,35 @@ import { Title, PortfolioImage, Meta } from '../../components/portfolio'
 import P from '../../components/paragraph'
 
 const Portfolio = () => (
-  <Layout title="connect4">
+  <Layout title="sprinkles">
     <br />
     <Container>
       <Title>
-        Connect4 <Badge>2019</Badge>
+        Whata Lotta Sprinkles Ice Cream Company <Badge>2017</Badge>
       </Title>
       <P>
-        Collaborative C++ project using SFML for the Orange Coast College
-        Programming Club. WIP
+        Fictional ice cream shop application written in C#.
       </P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>Linux, Windows</span>
+          <span>Windows</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>C++, SFML (Simple Fast Multimedia Library)</span>
+          <span>C#</span>
         </ListItem>
         <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://github.com/jasolisdev/connect4" target="_blank">
-            https://github.com/jasolisdev/connect4 <ExternalLinkIcon mx="2px" />
+          <Meta>Github</Meta>
+          <Link href="https://github.com/jasolisdev/icecream_shop/" target="_blank">
+            https://github.com/jasolisdev/icecream_shop/ <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
       <PortfolioImage
-        src="/images/portfolio/connect4_01.png"
-        alt="connect4" />
+        src="/images/portfolio/sprinkles-ice-cream_01.png"
+        alt="sprinkles-ice-cream"
+      />
     </Container>
   </Layout>
 )

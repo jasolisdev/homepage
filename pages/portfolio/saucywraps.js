@@ -5,11 +5,11 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const Portfolio = () => (
-  <Layout title="Saucywraps">
+  <Layout title="saucywraps">
     <br />
     <Container>
       <Title>
-        Saucywraps <Badge>2019-</Badge>
+        Saucywraps <Badge>2019</Badge>
       </Title>
       <P>A car wrapping website.</P>
       <List ml={4} my={4}>
@@ -30,7 +30,7 @@ const Portfolio = () => (
       </List>
       <PortfolioImage
         src="/images/portfolio/saucywraps_01.png"
-        alt="Saucywraps"
+        alt="saucywraps"
       />
     </Container>
   </Layout>

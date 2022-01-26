@@ -9,11 +9,10 @@ const Portfolio = () => (
     <br />
     <Container>
       <Title>
-        Connect4 <Badge>2019</Badge>
+        Matrix Cli <Badge>2014</Badge>
       </Title>
       <P>
-        Collaborative C++ project using SFML for the Orange Coast College
-        Programming Club. WIP
+        First command line program I created after learning the basics of C++.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -22,18 +21,18 @@ const Portfolio = () => (
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>
-          <span>C++, SFML (Simple Fast Multimedia Library)</span>
+          <span>C++</span>
         </ListItem>
         <ListItem>
           <Meta>Website</Meta>
-          <Link href="https://github.com/jasolisdev/connect4" target="_blank">
-            https://github.com/jasolisdev/connect4 <ExternalLinkIcon mx="2px" />
+          <Link href="https://github.com/jasolisdev/matrix_cli" target="_blank">
+            https://github.com/jasolisdev/matrix_cli <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
       <PortfolioImage
-        src="/images/portfolio/connect4_01.png"
-        alt="connect4" />
+        src="/images/portfolio/matrix-cli_01.png"
+        alt="matrixcli" />
     </Container>
   </Layout>
 )

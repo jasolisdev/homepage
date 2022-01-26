@@ -5,15 +5,14 @@ import { Title, PortfolioImage, Meta } from '../../components/portfolio'
 import P from '../../components/paragraph'
 
 const Portfolio = () => (
-  <Layout title="connect4">
+  <Layout title="sao">
     <br />
     <Container>
       <Title>
-        Connect4 <Badge>2019</Badge>
+        Sword Art Online Shooter <Badge>2014</Badge>
       </Title>
       <P>
-        Collaborative C++ project using SFML for the Orange Coast College
-        Programming Club. WIP
+        Sword Art Online inspired shooter written in C++ using SFML.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -25,15 +24,15 @@ const Portfolio = () => (
           <span>C++, SFML (Simple Fast Multimedia Library)</span>
         </ListItem>
         <ListItem>
-          <Meta>Website</Meta>
-          <Link href="https://github.com/jasolisdev/connect4" target="_blank">
-            https://github.com/jasolisdev/connect4 <ExternalLinkIcon mx="2px" />
+          <Meta>Github</Meta>
+          <Link href="https://github.com/jasolisdev/sfml_sao" target="_blank">
+            https://github.com/jasolisdev/sfml_sao <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
       <PortfolioImage
-        src="/images/portfolio/connect4_01.png"
-        alt="connect4" />
+        src="/images/portfolio/sfml-sao_02.gif"
+        alt="sfml-sao" />
     </Container>
   </Layout>
 )
