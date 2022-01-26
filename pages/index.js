@@ -6,6 +6,7 @@ import {
   Box,
   Image,
   Button,
+  Tooltip,
   List,
   ListItem,
   Icon,
@@ -120,8 +121,6 @@ const Home = () => (
           there is nothing more enjoyable than to design and develop great
           looking websites for nice people. It's that simple.
         </Paragraph>
-
-
         <Box align="center" my={4}>
           <Link href="Resume.pdf" target="_blank">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -131,7 +130,7 @@ const Home = () => (
         </Box>
       </Section>
       <Section delay={0.2}>
-        <Heading as="h3" variant="section-title">
+        <Heading mb={7} as="h3" variant="section-title">
           Professional Skills
         </Heading>
         <Heading
@@ -143,46 +142,118 @@ const Home = () => (
           Programming/Scripting Languages
         </Heading>
         <p align="center">
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={FaCopyright} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={SiCplusplus} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={SiCsharp} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={SiPython} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={SiJavascript} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={IoLogoNodejs} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={SiLua} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={SiGnubash} />}
-          ></Button>
+          <Tooltip label="C">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={FaCopyright}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="C++">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={SiCplusplus}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="C#">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={SiCsharp}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="Python">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={SiPython}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="Javascript">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={SiJavascript}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="Nodejs">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={IoLogoNodejs}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="Lua">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={SiLua}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="Bash">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={SiGnubash}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
         </p>
         <Heading
           as="h3"
@@ -193,36 +264,90 @@ const Home = () => (
           Web Development
         </Heading>
         <p align="center">
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={IoLogoHtml5} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={IoLogoCss3} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={IoLogoSass} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={IoLogoReact} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={IoLogoWordpress} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={SiWebflow} />}
-          ></Button>
+          <Tooltip label="HTML5">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={IoLogoHtml5}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="CSS3">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={IoLogoCss3}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="SASS">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={IoLogoSass}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="React">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={IoLogoReact}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="Wordpress">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={IoLogoWordpress}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="Webflow">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={SiWebflow}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
         </p>
         <Heading
           as="h3"
@@ -233,62 +358,158 @@ const Home = () => (
           Database
         </Heading>
         <p align="center">
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={GrMysql} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={SiMariadb} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={SiPostgresql} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={SiMongodb} />}
-          ></Button>
+          <Tooltip label="Mysql">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={GrMysql}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="MariaDB">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={SiMariadb}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="Postgresql">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={SiPostgresql}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="MonogoDB">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={SiMongodb}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
         </p>
-        <Heading as="h3" variant="section-title" textAlign="center">
+        <Heading
+          as="h3"
+          variant="section-title"
+          textAlign="center"
+          fontSize={15}
+        >
           Tools and Technologies
         </Heading>
         <p align="center">
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={IoGitNetwork} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={FaLinux} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={IoTerminal} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={SiNeovim} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={SiVisualstudiocode} />}
-          ></Button>
-          <Button
-            variant="ghost"
-            colorScheme="teal"
-            leftIcon={<Icon w={7} h={7} as={IoLogoFigma} />}
-          ></Button>
+          <Tooltip label="Git">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={IoGitNetwork}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="Linux">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={FaLinux}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="Terminal">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={IoTerminal}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="Neovim">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={SiNeovim}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="VSCode">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={SiVisualstudiocode}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
+          <Tooltip label="Figma">
+            <span>
+              <Icon
+                w={7} h={7}
+                as={IoLogoFigma}
+                variant="ghost"
+                color="#88ccca"
+                mt={3}
+                mr={3}
+                ml={3}
+              >
+              </Icon>
+            </span>
+          </Tooltip>
         </p>
+        <br />
         <Box align="center" my={4}>
           <NextLink href="/portfolio">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
@@ -341,7 +562,7 @@ const Home = () => (
         </List>
       </Section>
     </Container>
-  </Layout>
+  </Layout >
 )
 
 export default Home

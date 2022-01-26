@@ -5,7 +5,7 @@ import { CopyToClipboard } from 'react-copy-to-clipboard'
 
 function Email() {
   const [copied, setCopied] = useState(false)
-  const email = 'hello@josesolis.dev'
+  const email = 'jasolisdev@gmail.com'
 
   return (
     <div>
@@ -15,7 +15,7 @@ function Email() {
           colorScheme="teal"
           leftIcon={<Icon as={IoMail} />}
         >
-          hello@josesolis.dev Copied!
+          jasolisdev@gmail.com&nbsp;&nbsp;Copied!
         </Button>
       ) : (
         <CopyToClipboard text={email} onCopy={() => setCopied(true)}>
@@ -24,7 +24,7 @@ function Email() {
             colorScheme="teal"
             leftIcon={<Icon as={IoMail} />}
           >
-            hello@josesolis.dev
+            jasolisdev@gmail.com
           </Button>
         </CopyToClipboard>
       )}

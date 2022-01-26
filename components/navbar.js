@@ -10,6 +10,7 @@ import {
   Menu,
   MenuItem,
   MenuList,
+  MenuDivider,
   MenuButton,
   IconButton,
   useColorModeValue
@@ -17,6 +18,7 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
+import { FaFilePdf } from "react-icons/fa";
 
 const LinkItem = ({ href, path, _target, children, ...props }) => {
   const active = path === href
@@ -109,7 +111,9 @@ const Navbar = props => {
                 aria-label="Options"
                 color={useColorModeValue('#504945', '#bfb5a6')}
               />
-              <MenuList>
+              <MenuList
+                bg={useColorModeValue('#bfb5a6', '#504945')}
+              >
                 <NextLink href="/" passHref>
                   <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
@@ -119,11 +123,24 @@ const Navbar = props => {
                 <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink>
+                <MenuDivider />
                 <MenuItem
                   as={Link}
                   href="https://github.com/jasolisdev/homepage"
+                  target="_blank"
+                  style={{ gap: 4 }}
                 >
+                  <IoLogoGithub />
                   View Source
+                </MenuItem>
+                <MenuItem
+                  as={Link}
+                  href="Resume.pdf"
+                  target="_blank"
+                  style={{ gap: 4 }}
+                >
+                  <FaFilePdf />
+                  Resume
                 </MenuItem>
               </MenuList>
             </Menu>
