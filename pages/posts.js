@@ -1,4 +1,4 @@
-import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
@@ -7,7 +7,10 @@ import thumbArchLinuxSetup from '../public/images/contents/blog-my-arch-linux-se
 
 const Posts = () => (
   <Layout title="Posts">
-    <Container>
+    <Container
+      bg={useColorModeValue('whiteAlpha.500', '#3c3836')}
+      color={useColorModeValue('#504945', '#bfb5a6')}
+    >
       <Heading as="h3" fontSize={20} mb={4}>
         <br />
         Popular Posts

@@ -100,8 +100,8 @@ const Home = () => (
           specialty is in full website strategy, design and development. I enjoy
           turning complex problems into simple, beautiful and intuitive designs.
           Currently, i'm working on developing my skills in React and making a
-          rpg game on the side called{' '}
-          <NextLink href="/portfolio/inkdrop">
+          connect4 game on the side called{' '}
+          <NextLink href="/portfolio/connect4">
             <Link>Connect4</Link>
           </NextLink>
           .
@@ -120,32 +120,15 @@ const Home = () => (
           there is nothing more enjoyable than to design and develop great
           looking websites for nice people. It's that simple.
         </Paragraph>
+
+
         <Box align="center" my={4}>
-          <NextLink href="/portfolio">
+          <Link href="Resume.pdf" target="_blank">
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Resume
             </Button>
-          </NextLink>
+          </Link>
         </Box>
-      </Section>
-      <Section delay={0.3}>
-        <Heading as="h3" variant="section-title">
-          I ♥
-        </Heading>
-        <Paragraph>
-          Camping/Hiking, Crypto,{' '}
-          <Link
-            href="https://lasvegas.electricdaisycarnival.com/"
-            target="_blank"
-          >
-            Raving
-          </Link>
-          , Watching Tiktok,{' '}
-          <Link href="https://josesolis.dev/" target="_blank">
-            Making Games
-          </Link>
-          , Aloha BBQ
-        </Paragraph>
       </Section>
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
