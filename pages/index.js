@@ -100,7 +100,7 @@ const Home = () => (
           experience with natural passion and excitement for technology. My
           specialty is in full website strategy, design and development. I enjoy
           turning complex problems into simple, beautiful and intuitive designs.
-          Currently, i'm working on developing my skills in React and making a
+          Currently, I'm working on developing my skills in React and making a
           connect4 game on the side called{' '}
           <NextLink href="/portfolio/connect4">
             <Link>Connect4</Link>
