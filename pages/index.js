@@ -18,7 +18,6 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Email from '../components/email'
 import {
-  IoLogoTwitter,
   IoLogoInstagram,
   IoLogoGithub,
   IoGitNetwork,
