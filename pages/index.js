@@ -538,24 +538,13 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://twitter.com/josexsolis" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoTwitter} />}
-              >
-                @josexsolis
-              </Button>
-            </Link>
-          </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/josexsolis" target="_blank">
+            <Link href="https://instagram.com/jxsolis_" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<Icon as={IoLogoInstagram} />}
               >
-                @josexsolis
+                @jxsolis_
               </Button>
             </Link>
           </ListItem>
