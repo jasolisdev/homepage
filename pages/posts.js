@@ -1,4 +1,9 @@
-import { Container, Heading, SimpleGrid, useColorModeValue } from '@chakra-ui/react'
+import {
+  Container,
+  Heading,
+  SimpleGrid,
+  useColorModeValue
+} from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'

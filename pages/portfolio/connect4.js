@@ -31,9 +31,7 @@ const Portfolio = () => (
           </Link>
         </ListItem>
       </List>
-      <PortfolioImage
-        src="/images/portfolio/connect4_01.png"
-        alt="connect4" />
+      <PortfolioImage src="/images/portfolio/connect4_01.png" alt="connect4" />
     </Container>
   </Layout>
 )

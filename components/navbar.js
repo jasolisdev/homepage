@@ -1,3 +1,4 @@
+import { forwardRef } from 'react'
 import Logo from './logo'
 import NextLink from 'next/link'
 import {
@@ -18,26 +19,30 @@ import {
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
 import { IoLogoGithub } from 'react-icons/io5'
-import { FaFilePdf } from "react-icons/fa";
+import { FaFilePdf } from 'react-icons/fa'
 
-const LinkItem = ({ href, path, _target, children, ...props }) => {
+const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('#504945', '#bfb5a6')
-
   return (
-    <NextLink href={href} passHref>
-      <Link
-        p={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
-        _target={_target}
-        {...props}
-      >
-        {children}
-      </Link>
-    </NextLink>
+    <Link
+      as={NextLink}
+      href={href}
+      scroll={false}
+      p={2}
+      bg={active ? 'grassTeal' : undefined}
+      color={active ? '#ff00ff' : inactiveColor}
+      target={target}
+      {...props}
+    >
+      {children}
+    </Link>
   )
 }
+
+const MenuLink = forwardRef((props, ref) => (
+  <Link ref={ref} as={NextLink} {...props} />
+))
 
 const Navbar = props => {
   const { path } = props
@@ -111,18 +116,16 @@ const Navbar = props => {
                 aria-label="Options"
                 color={useColorModeValue('#504945', '#bfb5a6')}
               />
-              <MenuList
-                bg={useColorModeValue('#bfb5a6', '#504945')}
-              >
-                <NextLink href="/" passHref>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/portfolio" passHref>
-                  <MenuItem as={Link}>Portfolio</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
+              <MenuList bg={useColorModeValue('#bfb5a6', '#504945')}>
+                <MenuItem as={MenuLink} href="/">
+                  About
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/portfolio">
+                  Portfolio
+                </MenuItem>
+                <MenuItem as={MenuLink} href="/posts">
+                  Posts
+                </MenuItem>
                 <MenuDivider />
                 <MenuItem
                   as={Link}

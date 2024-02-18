@@ -18,7 +18,6 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Email from '../components/email'
 import {
-  IoLogoInstagram,
   IoLogoGithub,
   IoGitNetwork,
   IoTerminal,
@@ -51,7 +50,7 @@ const Home = () => (
   <Layout>
     <Container
       padding="4"
-      bg={useColorModeValue('whiteAlpha.500', '#3c3836')}
+      bg={useColorModeValue('whiteAlpha.100', '#232323')}
       color={useColorModeValue('#504945', '#bfb5a6')}
     >
       <Box
@@ -62,14 +61,14 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
         color={useColorModeValue('#504945', '#bfb5a6')}
       >
-        Hi, I&apos;m a full-stack developer based in Orange County, CA!
+        Hi, I&apos;m a full-stack developer based in Los Angeles, CA!
       </Box>
       <Box border="2px solid #A89984" padding="4" display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant="page-title">
+          <Heading as="h2" variant="section-title">
             Jose Solis
           </Heading>
-          <p>( Developer / Designer )</p>
+          <p>( Software Engineer / Developer )</p>
         </Box>
         <Box
           flexShrink={0}
@@ -96,14 +95,18 @@ const Home = () => (
         <Paragraph>
           Resourceful and creative IT professional passionate about interactive
           media and aspiring to make an impact by combining technical skill and
-          experience with natural passion and excitement for technology. My
-          specialty is in full website strategy, design and development. I enjoy
+          experience with natural passion and excitement for technology. I enjoy
           turning complex problems into simple, beautiful and intuitive designs.
           Currently, I'm working on developing my skills in React and making a
           connect4 game on the side called{' '}
-          <NextLink href="/portfolio/connect4">
-            <Link>Connect4</Link>
-          </NextLink>
+          <Link
+            as={NextLink}
+            href="/portfolio/connect4"
+            passHref
+            scroll={false}
+          >
+            Connect4
+          </Link>
           .
         </Paragraph>
         <Heading
@@ -144,113 +147,113 @@ const Home = () => (
           <Tooltip label="C">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={FaCopyright}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="C++">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={SiCplusplus}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="C#">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={SiCsharp}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="Python">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={SiPython}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="Javascript">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={SiJavascript}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="Nodejs">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={IoLogoNodejs}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="Lua">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={SiLua}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="Bash">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={SiGnubash}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
         </p>
@@ -266,85 +269,85 @@ const Home = () => (
           <Tooltip label="HTML5">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={IoLogoHtml5}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="CSS3">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={IoLogoCss3}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="SASS">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={IoLogoSass}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="React">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={IoLogoReact}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="Wordpress">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={IoLogoWordpress}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="Webflow">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={SiWebflow}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
         </p>
@@ -360,57 +363,57 @@ const Home = () => (
           <Tooltip label="Mysql">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={GrMysql}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="MariaDB">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={SiMariadb}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="Postgresql">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={SiPostgresql}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="MonogoDB">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={SiMongodb}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
         </p>
@@ -426,91 +429,91 @@ const Home = () => (
           <Tooltip label="Git">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={IoGitNetwork}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="Linux">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={FaLinux}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="Terminal">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={IoTerminal}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="Neovim">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={SiNeovim}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="VSCode">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={SiVisualstudiocode}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
           <Tooltip label="Figma">
             <span>
               <Icon
-                w={7} h={7}
+                w={7}
+                h={7}
                 as={IoLogoFigma}
                 variant="ghost"
-                color="#88ccca"
+                color="#7fbbb3"
                 mt={3}
                 mr={3}
                 ml={3}
-              >
-              </Icon>
+              ></Icon>
             </span>
           </Tooltip>
         </p>
         <br />
         <Box align="center" my={4}>
-          <NextLink href="/portfolio">
+          <NextLink href="/portfolio" legacyBehavior>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               Portfolio
             </Button>
@@ -536,21 +539,10 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
-            <Link href="https://instagram.com/jxsolis_" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoInstagram} />}
-              >
-                @jxsolis_
-              </Button>
-            </Link>
-          </ListItem>
         </List>
       </Section>
     </Container>
-  </Layout >
+  </Layout>
 )
 
 export default Home

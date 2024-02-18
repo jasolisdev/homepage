@@ -26,13 +26,15 @@ const Portfolio = () => (
         <ListItem>
           <Meta>Website</Meta>
           <Link href="https://github.com/jasolisdev/matrix_cli" target="_blank">
-            https://github.com/jasolisdev/matrix_cli <ExternalLinkIcon mx="2px" />
+            https://github.com/jasolisdev/matrix_cli{' '}
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>
       <PortfolioImage
         src="/images/portfolio/matrix-cli_01.png"
-        alt="matrixcli" />
+        alt="matrixcli"
+      />
     </Container>
   </Layout>
 )

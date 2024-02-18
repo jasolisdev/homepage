@@ -26,8 +26,12 @@ const Portfolio = () => (
         </ListItem>
         <ListItem>
           <Meta>Github</Meta>
-          <Link href="https://github.com/jasolisdev/space-vector-shapes" target="_blank">
-            https://github.com/jasolisdev/space-vector-shapes <ExternalLinkIcon mx="2px" />
+          <Link
+            href="https://github.com/jasolisdev/space-vector-shapes"
+            target="_blank"
+          >
+            https://github.com/jasolisdev/space-vector-shapes{' '}
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>

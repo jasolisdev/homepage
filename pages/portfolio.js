@@ -1,4 +1,10 @@
-import { Container, Heading, SimpleGrid, Divider, useColorModeValue } from '@chakra-ui/react'
+import {
+  Container,
+  Heading,
+  SimpleGrid,
+  Divider,
+  useColorModeValue
+} from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { PortfolioGridItem } from '../components/grid-item'

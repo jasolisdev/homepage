@@ -26,14 +26,12 @@ const Logo = () => {
 
   return (
     <Link href="/">
-      <a>
-        <LogoBox>
-          <Image src={logoImg} width={50} height={50} alt="logo" />
-          <Text color={useColorModeValue('#504945', '#bfb5a6')} ml={3}>
-            Jose Solis
-          </Text>
-        </LogoBox>
-      </a>
+      <LogoBox>
+        <Image src={logoImg} width={50} height={50} alt="logo" />
+        <Text color={useColorModeValue('#504945', '#bfb5a6')} ml={3}>
+          Jose Solis
+        </Text>
+      </LogoBox>
     </Link>
   )
 }

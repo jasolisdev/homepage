@@ -11,9 +11,7 @@ const Portfolio = () => (
       <Title>
         Whata Lotta Sprinkles Ice Cream Company <Badge>2017</Badge>
       </Title>
-      <P>
-        Fictional ice cream shop application written in C#.
-      </P>
+      <P>Fictional ice cream shop application written in C#.</P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
@@ -25,8 +23,12 @@ const Portfolio = () => (
         </ListItem>
         <ListItem>
           <Meta>Github</Meta>
-          <Link href="https://github.com/jasolisdev/icecream_shop/" target="_blank">
-            https://github.com/jasolisdev/icecream_shop/ <ExternalLinkIcon mx="2px" />
+          <Link
+            href="https://github.com/jasolisdev/icecream_shop/"
+            target="_blank"
+          >
+            https://github.com/jasolisdev/icecream_shop/{' '}
+            <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
       </List>

@@ -11,9 +11,7 @@ const Portfolio = () => (
       <Title>
         Sword Art Online Shooter <Badge>2014</Badge>
       </Title>
-      <P>
-        Sword Art Online inspired shooter written in C++ using SFML.
-      </P>
+      <P>Sword Art Online inspired shooter written in C++ using SFML.</P>
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
@@ -30,9 +28,7 @@ const Portfolio = () => (
           </Link>
         </ListItem>
       </List>
-      <PortfolioImage
-        src="/images/portfolio/sfml-sao_02.gif"
-        alt="sfml-sao" />
+      <PortfolioImage src="/images/portfolio/sfml-sao_02.gif" alt="sfml-sao" />
     </Container>
   </Layout>
 )
