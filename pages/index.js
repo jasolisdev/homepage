@@ -50,8 +50,8 @@ const Home = () => (
   <Layout>
     <Container
       padding="4"
-      bg={useColorModeValue('whiteAlpha.100', '#232323')}
-      color={useColorModeValue('#504945', '#bfb5a6')}
+      bg={useColorModeValue('whiteAlpha.100', '#18181b')}
+      color={useColorModeValue('#504945', '#d6d6d8')}
     >
       <Box
         borderRadius="lg"
@@ -59,13 +59,13 @@ const Home = () => (
         p={3}
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
-        color={useColorModeValue('#504945', '#bfb5a6')}
+        color={useColorModeValue('#504945', '#d6d6d8')}
       >
         Hi, I&apos;m a full-stack developer based in Los Angeles, CA!
       </Box>
-      <Box border="2px solid #A89984" padding="4" display={{ md: 'flex' }}>
+      <Box border="2px solid #18181b" padding="4" display={{ md: 'flex' }}>
         <Box flexGrow={1}>
-          <Heading as="h2" variant="section-title">
+          <Heading as="h2" variant="page-title">
             Jose Solis
           </Heading>
           <p>( Software Engineer / Developer )</p>
