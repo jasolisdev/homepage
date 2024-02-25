@@ -2,6 +2,7 @@ import { forwardRef } from 'react'
 import Logo from './logo'
 import NextLink from 'next/link'
 import {
+  Icon,
   Container,
   Box,
   Link,
@@ -23,7 +24,7 @@ import { FaFilePdf } from 'react-icons/fa'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('#504945', '#bfb5a6')
+  const inactiveColor = useColorModeValue('#d6d6d8', '#d6d6d8')
   return (
     <Link
       as={NextLink}
@@ -31,7 +32,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
       scroll={false}
       p={2}
       bg={active ? 'grassTeal' : undefined}
-      color={active ? '#ff00ff' : inactiveColor}
+      color={active ? '#18181b' : inactiveColor}
       target={target}
       {...props}
     >
@@ -54,7 +55,7 @@ const Navbar = props => {
       w="100%"
       bg={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
-      zIndex={1}
+      zIndex={2}
       {...props}
     >
       <Container
@@ -66,7 +67,7 @@ const Navbar = props => {
         justify="space-between"
       >
         <Flex align="center" mr={5}>
-          <Heading height="40px" as="h1" size="lg" letterSpacing={'tighter'}>
+          <Heading as="h1" size="lg" letterSpacing={'tighter'}>
             <Logo />
           </Heading>
         </Flex>
@@ -96,6 +97,7 @@ const Navbar = props => {
             pl={2}
           >
             <IoLogoGithub />
+            <Icon as={IoLogoGithub} />
             Source
           </LinkItem>
         </Stack>
@@ -104,7 +106,7 @@ const Navbar = props => {
           <ThemeToggleButton />
 
           <Box
-            color={useColorModeValue('#504945', '#bfb5a6')}
+            // menu-bg={useColorModeValue('#ff00ff', '#00ffff')}
             ml={2}
             display={{ base: 'inline-block', md: 'none' }}
           >
@@ -114,35 +116,40 @@ const Navbar = props => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
-                color={useColorModeValue('#504945', '#bfb5a6')}
               />
-              <MenuList bg={useColorModeValue('#bfb5a6', '#504945')}>
-                <MenuItem as={MenuLink} href="/">
+              <MenuList bg={useColorModeValue('white', '#18181b')}>
+                <MenuItem
+                  bg={useColorModeValue('whiteAlpha.800', '#18181b')}
+                  as={MenuLink}
+                  href="/"
+                >
                   About
                 </MenuItem>
-                <MenuItem as={MenuLink} href="/portfolio">
-                  Portfolio
-                </MenuItem>
-                <MenuItem as={MenuLink} href="/posts">
-                  Posts
-                </MenuItem>
-                <MenuDivider />
+                {/* <MenuItem as={MenuLink} href="/portfolio"> */}
+                {/*   Portfolio */}
+                {/* </MenuItem> */}
+                {/* <MenuItem as={MenuLink} href="/posts"> */}
+                {/*   Posts */}
+                {/* </MenuItem> */}
+                <MenuDivider></MenuDivider>
                 <MenuItem
+                  bg={useColorModeValue('whiteAlpha.800', '#18181b')}
                   as={Link}
                   href="https://github.com/jasolisdev/homepage"
                   target="_blank"
                   style={{ gap: 4 }}
                 >
-                  <IoLogoGithub />
+                  <Icon as={IoLogoGithub} />
                   View Source
                 </MenuItem>
                 <MenuItem
+                  bg={useColorModeValue('whiteAlpha.800', '#18181b')}
                   as={Link}
                   href="Resume.pdf"
                   target="_blank"
                   style={{ gap: 4 }}
                 >
-                  <FaFilePdf />
+                  <Icon as={FaFilePdf} />
                   Resume
                 </MenuItem>
               </MenuList>
