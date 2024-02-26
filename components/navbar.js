@@ -19,34 +19,34 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-import { IoLogoGithub } from 'react-icons/io5'
+// import { IoLogoGithub } from 'react-icons/io5'
 import { FaFilePdf } from 'react-icons/fa'
 
-const LinkItem = ({ href, path, target, children, ...props }) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue('#d6d6d8', '#d6d6d8')
-  return (
-    <Link
-      as={NextLink}
-      href={href}
-      scroll={false}
-      p={2}
-      bg={active ? 'grassTeal' : undefined}
-      color={active ? '#18181b' : inactiveColor}
-      target={target}
-      {...props}
-    >
-      {children}
-    </Link>
-  )
-}
+// const LinkItem = ({ href, path, target, children, ...props }) => {
+//   const active = path === href
+//   const inactiveColor = useColorModeValue('#d6d6d8', '#d6d6d8')
+//   return (
+//     <Link
+//       as={NextLink}
+//       href={href}
+//       scroll={false}
+//       p={2}
+//       bg={active ? 'grassTeal' : undefined}
+//       color={active ? '#18181b' : inactiveColor}
+//       target={target}
+//       {...props}
+//     >
+//       {children}
+//     </Link>
+//   )
+// }
 
 const MenuLink = forwardRef((props, ref) => (
   <Link ref={ref} as={NextLink} {...props} />
 ))
 
 const Navbar = props => {
-  const { path } = props
+  // const { path } = props
 
   return (
     <Box

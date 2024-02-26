@@ -9,7 +9,7 @@ import {
   // Tooltip,
   List,
   ListItem,
-  Icon,
+  // Icon,
   Flex,
   useColorModeValue
 } from '@chakra-ui/react'
@@ -18,18 +18,17 @@ import Paragraph from '../components/paragraph'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import Email from '../components/email'
-import {
-  IoLogoGithub
-  // IoGitNetwork,
-  // IoTerminal,
-  // IoLogoFigma,
-  // IoLogoWordpress,
-  // IoLogoHtml5,
-  // IoLogoCss3,
-  // IoLogoSass,
-  // IoLogoReact,
-  // IoLogoNodejs
-} from 'react-icons/io5'
+import {} from // IoLogoGithub
+// IoGitNetwork,
+// IoTerminal,
+// IoLogoFigma,
+// IoLogoWordpress,
+// IoLogoHtml5,
+// IoLogoCss3,
+// IoLogoSass,
+// IoLogoReact,
+// IoLogoNodejs
+'react-icons/io5'
 // import {
 //   SiNeovim,
 //   SiVisualstudiocode,
