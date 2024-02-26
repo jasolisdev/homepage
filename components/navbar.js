@@ -80,26 +80,25 @@ const Navbar = props => {
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
         >
-          <LinkItem href="/portfolio" path={path}>
-            Portfolio
-          </LinkItem>
-          <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem>
-          <LinkItem
-            _target="_blank"
-            href="https://github.com/jasolisdev/homepage"
-            target="_blank"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            <IoLogoGithub />
-            <Icon as={IoLogoGithub} />
-            Source
-          </LinkItem>
+          {/* <LinkItem href="/portfolio" path={path}> */}
+          {/*   Portfolio */}
+          {/* </LinkItem> */}
+          {/* <LinkItem href="/posts" path={path}> */}
+          {/*   Posts */}
+          {/* </LinkItem> */}
+          {/* <LinkItem */}
+          {/*   _target="_blank" */}
+          {/*   href="https://github.com/jasolisdev/homepage" */}
+          {/*   target="_blank" */}
+          {/*   path={path} */}
+          {/*   display="inline-flex" */}
+          {/*   alignItems="center" */}
+          {/*   style={{ gap: 4 }} */}
+          {/*   pl={2} */}
+          {/* > */}
+          {/*   <Icon as={IoLogoGithub} /> */}
+          {/*   Source */}
+          {/* </LinkItem> */}
         </Stack>
 
         <Box flex={1} align="right">
@@ -132,16 +131,16 @@ const Navbar = props => {
                 {/*   Posts */}
                 {/* </MenuItem> */}
                 <MenuDivider></MenuDivider>
-                <MenuItem
-                  bg={useColorModeValue('whiteAlpha.800', '#18181b')}
-                  as={Link}
-                  href="https://github.com/jasolisdev/homepage"
-                  target="_blank"
-                  style={{ gap: 4 }}
-                >
-                  <Icon as={IoLogoGithub} />
-                  View Source
-                </MenuItem>
+                {/* <MenuItem */}
+                {/*   bg={useColorModeValue('whiteAlpha.800', '#18181b')} */}
+                {/*   as={Link} */}
+                {/*   href="https://github.com/jasolisdev/homepage" */}
+                {/*   target="_blank" */}
+                {/*   style={{ gap: 4 }} */}
+                {/* > */}
+                {/*   <Icon as={IoLogoGithub} /> */}
+                {/*   View Source */}
+                {/* </MenuItem> */}
                 <MenuItem
                   bg={useColorModeValue('whiteAlpha.800', '#18181b')}
                   as={Link}

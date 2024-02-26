@@ -55,7 +55,7 @@ const Home = () => (
       bg={useColorModeValue('whiteAlpha.100', '#18181b')}
       color={useColorModeValue('#504945', '#d6d6d8')}
     >
-      <Flex mb={6} p={3} justifyContent="center" alignItems="center">
+      <Flex mt={2} mb={2} p={3} justifyContent="center" alignItems="center">
         <svg
           id="line"
           data-name="Layer 1"
@@ -87,7 +87,7 @@ const Home = () => (
 
       <Box
         borderRadius="lg"
-        mb={6}
+        mb={7}
         p={3}
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
@@ -101,11 +101,11 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Jose Solis
           </Heading>
-          <p>( Certified EKG Monitor Technician / Software Engineer )</p>
+          <p>( Certified EKG Monitor Technician 🫀 / Software Engineer 🤓 )</p>
         </Box>
         <Box
           flexShrink={0}
-          mt={{ base: 4, md: 0 }}
+          mt={{ base: 8, md: 0 }}
           ml={{ md: 6 }}
           textAlign="center"
         >
@@ -113,7 +113,7 @@ const Home = () => (
             borderColor="#404040"
             borderWidth={2}
             borderStyle="solid"
-            maxWidth="250px"
+            maxWidth="190px"
             display="inline-block"
             borderRadius="50%"
             src="/images/jose.jpg"
@@ -138,11 +138,14 @@ const Home = () => (
           monitoring and timely intervention can be life-saving.
         </Paragraph>
 
-        <Flex mt={6} mb={6} p={3} justifyContent="center" alignItems="center">
-          <Box>
-            <Heart></Heart>
-          </Box>
-        </Flex>
+        <Section delay={0.2}>
+          <Flex mt={6} mb={6} p={3} justifyContent="center" alignItems="center">
+            <Box>
+              <Heart></Heart>
+            </Box>
+          </Flex>
+        </Section>
+
         <Heading
           as="h3"
           variant="section-title"
@@ -572,17 +575,17 @@ const Home = () => (
           <ListItem>
             <Email />
           </ListItem>
-          <ListItem>
-            <Link href="https://github.com/jasolisdev" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<Icon as={IoLogoGithub} />}
-              >
-                @jasolidev
-              </Button>
-            </Link>
-          </ListItem>
+          {/* <ListItem> */}
+          {/*   <Link href="https://github.com/jasolisdev" target="_blank"> */}
+          {/*     <Button */}
+          {/*       variant="ghost" */}
+          {/*       colorScheme="teal" */}
+          {/*       leftIcon={<Icon as={IoLogoGithub} />} */}
+          {/*     > */}
+          {/*       @jasolidev */}
+          {/*     </Button> */}
+          {/*   </Link> */}
+          {/* </ListItem> */}
         </List>
       </Section>
     </Container>

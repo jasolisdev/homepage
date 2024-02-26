@@ -27,7 +27,7 @@ const Logo = () => {
   return (
     <Link href="/">
       <LogoBox>
-        <Image src={logoImg} width={50} height={50} alt="logo" />
+        <Image priority src={logoImg} width={40} height={50} alt="logo" />
         <Text color={useColorModeValue('#18181b', '#d6d6d8')} ml={3}>
           Jose Solis
         </Text>
