@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/static/js/main.ff08e7d8.js",
-    "index.html": "/index.html",
-    "main.ff08e7d8.js.map": "/static/js/main.ff08e7d8.js.map"
+    "main.js": "/medical-term-app/static/js/main.23ac1a4d.js",
+    "index.html": "/medical-term-app/index.html",
+    "main.23ac1a4d.js.map": "/medical-term-app/static/js/main.23ac1a4d.js.map"
   },
   "entrypoints": [
-    "static/js/main.ff08e7d8.js"
+    "static/js/main.23ac1a4d.js"
   ]
 }
